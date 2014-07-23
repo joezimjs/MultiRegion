@@ -1,9 +1,6 @@
 Backbone.Marionette.MultiRegion = Backbone.Marionette.Region.extend({
 	currentView: [],
 
-	/**
-	 * Append the rendered view into the DOM. This should not be part of the public API
-	 */
 	open: function(view) {
 		this.ensureEl();
 		this.$el.append(view.el);
