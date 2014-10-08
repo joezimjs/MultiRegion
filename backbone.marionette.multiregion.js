@@ -2,7 +2,7 @@ Backbone.Marionette.MultiRegion = Backbone.Marionette.Region.extend({
 	currentView: [],
 
 	open: function(view) {
-		this.ensureEl();
+		this._ensureElement();
 		this.$el.append(view.el);
 	},
 
